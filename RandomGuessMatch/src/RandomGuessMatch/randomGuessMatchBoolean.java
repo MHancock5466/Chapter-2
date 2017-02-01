@@ -18,16 +18,21 @@ public class randomGuessMatchBoolean
 	{
 		boolean response;
 		String answer;
-		int random, input;
+		int random, input, difference;
+		final int min = 1;
+		final int max = 5;
+
+		random = min + (int)(Math.random() * max);
 		
-		random = 1 + (int)(Math.random() * 5);
-		
-		answer = JOptionPane.showInputDialog(null, "Guess a number between 1 and 5.");
+		answer = JOptionPane.showInputDialog(null, "Guess a number between " + min + " and " + max + ".", "Choose A Number", 
+				JOptionPane.INFORMATION_MESSAGE);
 		input = Integer.parseInt(answer);
 		
+		difference = java.lang.Math.abs(random - input);
 		response = (input == random);
 		
-		JOptionPane.showMessageDialog(null, "Your number was " + input + ". The random number was " + random + " . That is " + response + ".");
+		JOptionPane.showMessageDialog(null, "You were " + difference + " off of the correct number.");
+		JOptionPane.showMessageDialog(null,	"You put " + input + " when the random number was " + random + " . That's " + response + ".");
 	}
 
 }
