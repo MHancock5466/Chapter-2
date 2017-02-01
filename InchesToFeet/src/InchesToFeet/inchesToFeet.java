@@ -2,13 +2,11 @@
  * 
  */
 package InchesToFeet;
-
-import javax.swing.JOptionPane;
-
 /**
  * @author mh137428
  *
  */
+import javax.swing.JOptionPane;
 public class inchesToFeet 
 {
 

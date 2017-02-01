@@ -19,7 +19,7 @@ public class nauticalMiles
 		String answer;
 		double kilometersPerNM = 1.852;
 		double milesPerNM = 1.150779;
-		int nauticalMiles;
+		double nauticalMiles;
 		double kilometers;
 		double miles;
 		

@@ -15,20 +15,16 @@ public class initials
 	 */
 	public static void main(String[] args) 
 	{
-		String answer;
 		String firstInitial;
 		String secondInitial;
 		String thirdInitial;
 		
-		answer = JOptionPane.showInputDialog(null, "What is the first initial in your full name?", "First Initial", JOptionPane.QUESTION_MESSAGE);
-		firstInitial = answer;
+		firstInitial = JOptionPane.showInputDialog(null, "What is the first initial in your full name?", "First Initial", JOptionPane.QUESTION_MESSAGE);
 		
-		answer = JOptionPane.showInputDialog(null, "What is the second initial in your full name?", "Second Initial", JOptionPane.QUESTION_MESSAGE);
-		secondInitial = answer;
+		secondInitial = JOptionPane.showInputDialog(null, "What is the second initial in your full name?", "Second Initial", JOptionPane.QUESTION_MESSAGE);
 				
-		answer = JOptionPane.showInputDialog(null, "What is the third initial in your full name?", "Third Initial", JOptionPane.QUESTION_MESSAGE);
-		thirdInitial = answer;
-		
+		thirdInitial = JOptionPane.showInputDialog(null, "What is the third initial in your full name?", "Third Initial", JOptionPane.QUESTION_MESSAGE);
+				
 		JOptionPane.showMessageDialog(null, "Your full initials are " + firstInitial + "." + secondInitial + "." + thirdInitial + ".");
 	}
 
